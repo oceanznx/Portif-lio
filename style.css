@@ -20,7 +20,7 @@ header {
     background: linear-gradient(90deg, #111111, #2b2a2a);
     color: #fff;
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -40,12 +40,12 @@ header h4 {
     align-items: flex-start;
     gap: 40px;
     padding: 50px 5%;
-    animation: fadeUp 1.2s ease-in-out;
+    animation: fadeUp 1.4s ease-in-out;
 }
 
 
 .left {
-    flex: 1;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,6 +64,7 @@ header h4 {
 
 .image:hover {
     transform: translateY(-5px);
+    box-shadow: #474747 0px 0px 20px;
 }
 
 .image img {
@@ -103,7 +104,7 @@ header h4 {
 }
 
 .contatos a:hover {
-    color: #fff;
+    color: #bd6868;
 }
 
 .github-link {
@@ -111,7 +112,7 @@ header h4 {
     background-color: #111;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 50px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -162,7 +163,7 @@ footer {
     padding: 20px;
     font-size: 0.9rem;
     opacity: 0.8;
-    margin-top: 70px;
+    margin-top: 10%;
 }
 
 
