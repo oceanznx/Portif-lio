@@ -60,7 +60,7 @@ nav ul li a::after {
     content: ''; 
     position: absolute;
     width: 0; 
-    height: 2.4px;
+    height: 1.5px;
     display: block;
     left: 0; 
     bottom: -5px; 
@@ -116,12 +116,12 @@ section {
     box-shadow: 0 0 6px rgba(58, 129, 162, 0.7);
 }
 
-.inicio h2, .habilidades h2, .sobre h2 {
+.inicio h2, .habilidades h2, .sobre h2, .projetos h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
-.inicio p, .habilidades p, .sobre p {
+.inicio p, .habilidades p, .sobre p, .projetos p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #d0d0d0;
@@ -178,7 +178,7 @@ hr {
 .content {
     display: flex;
     justify-content: center;
-    gap: 15rem;
+    gap: 10rem;
     margin-top: 6rem;
 }
 
@@ -190,8 +190,8 @@ hr {
 .html, .css, .js {
  text-align: left;
  width: 400px;
- transition: transform 0.3s ease;
- padding: 2rem;
+ transition: transform 0.4s ease, box-shadow 0.4s ease;
+ padding: 40px;
  border-radius: 20px;
 }
 
@@ -208,7 +208,7 @@ hr {
 }
 
 .html:hover, .css:hover, .js:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
     box-shadow: 0 0 10px #d0d0d0;
     cursor: pointer;
 }
@@ -216,7 +216,7 @@ hr {
 .foto-sobre {
     width: 400px;
     height: 600px;
-    border-radius: 20px;
+    border-radius: 30px;
     object-fit: cover;
     object-position: center;
     margin-bottom: 20px;
@@ -233,4 +233,100 @@ hr {
 .contato {
     margin-top: 2rem;
     text-align: center;
+}
+
+/* Projetos */
+
+section.projetos {
+    padding: 80px 4%;
+    text-align: center;
+    margin-top: 12rem;
+    
+}
+
+
+
+section.projetos .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-port {
+    margin-top: 60px;
+    width: 360px;
+    height: 460px;
+   background-size: cover;
+   background-position: 100% 0%;
+   transition: background-position 5s ease, transform 0.3s ease;
+   border-radius: 30px;
+   cursor: pointer;
+   position: relative;
+   border: 1px solid #3a81a2;
+}
+
+.img-port:hover {
+     background-position: 100% 100%;
+     transform: scale(1.05);
+}
+
+.escuro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.img-port:hover .escuro {
+    opacity: 1;
+}
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px  #ffffff14;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-footer {
+    border: none;
+    height: 3px;
+    width: 100%;
+    background: #3a81a2;
+    margin: 20px 0;
+}
+
+footer .linha-rodape p a {
+    color: #d0d0d0;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+footer .linha-rodape p a:hover {
+    color: #3a81a2;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+   vertical-align: middle;
 }
