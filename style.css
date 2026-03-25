@@ -102,7 +102,7 @@ main {
 }
 
 section {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .foto-perfil {
@@ -118,7 +118,7 @@ section {
 
 .inicio h2, .habilidades h2, .sobre h2, .projetos h2 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .inicio p, .habilidades p, .sobre p, .projetos p {
