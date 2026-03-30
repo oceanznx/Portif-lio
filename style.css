@@ -189,7 +189,7 @@ hr {
 }
 
 .html, .css, .js {
- text-align: left;
+ text-align: center;
  width: 400px;
  transition: transform 0.4s ease, box-shadow 0.4s ease;
  padding: 40px;
@@ -204,7 +204,7 @@ hr {
 
 .html p, .css p, .js p {
     color: #d0d0d0;
-    line-height: 1.4;
+    line-height: 1.6;
     font-size: small;
 }
 
@@ -241,7 +241,7 @@ hr {
 section.projetos {
     padding: 80px 4%;
     text-align: center;
-    margin-top: 9rem;
+    margin-top: 1rem;
     
 }
 
